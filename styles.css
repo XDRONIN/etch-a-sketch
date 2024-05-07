@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  height: 80vh;
+  width: 80vh;
+  flex-shrink: 1;
+  background-color: aqua;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+}
+body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
