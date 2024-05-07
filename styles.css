@@ -4,6 +4,7 @@
   width: 80vh;
   flex-shrink: 1;
   background-color: aqua;
+  flex-direction: column;
 }
 .header {
   display: flex;
@@ -13,4 +14,16 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.newRow {
+  display: flex;
+  flex-grow: 1;
+
+  background-color: blue;
+}
+.newDiv {
+  display: flex;
+  flex-grow: 1;
+  border: 2px solid;
+  border-color: blueviolet;
 }
