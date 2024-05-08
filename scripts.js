@@ -44,3 +44,22 @@ colour.addEventListener("click", () => {
 eraser.addEventListener("click", () => {
   mode = "eraser";
 });
+colour.addEventListener("mouseover", () => {
+  randomc = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  colour.style.color = randomc;
+  colour.style.backgroundColor = randomc;
+  colour.style.border = `1px solid ${randomc}`;
+  colour.style.textShadow =
+    "0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff";
+  (colour.style.boxShadow = `0 0 5px ${randomc}, 0 0 20px ${randomc}, 0 0 50px ${randomc}`),
+    `0 0 100px ${randomc}`;
+});
+
+colour.addEventListener("mouseleave", () => {
+  colour.style.color = "";
+  colour.style.backgroundColor = "";
+  colour.style.border = "";
+  colour.style.textShadow = "";
+  colour.style.boxShadow = "";
+});
+let randomc = "#" + Math.floor(Math.random() * 16777215).toString(16);
